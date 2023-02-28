@@ -1,0 +1,32 @@
+{
+    "caption": "Insert Iframe Embed",
+    "doc": "Inserts A standard Iframe, that is resizable",
+    "fields": {
+        "AAE": {
+            "caption": "URL",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "URL",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAQ": {
+            "caption": "Height",
+            "default_val": 500,
+            "editor": "DynamicValue",
+            "name": "height",
+            "optional": true,
+            "rank": 1,
+            "value": "number"
+        },
+        "AAR": {
+            "caption": "Width",
+            "default_val": 450,
+            "editor": "DynamicValue",
+            "name": "width",
+            "optional": true,
+            "rank": 2,
+            "value": "number"
+        }
+    }
+}

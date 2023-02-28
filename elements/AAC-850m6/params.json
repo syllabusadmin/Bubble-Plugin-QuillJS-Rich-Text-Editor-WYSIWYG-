@@ -1,0 +1,94 @@
+{
+    "add_hover_pressed": true,
+    "add_is_visible": true,
+    "autobinding_value": "text",
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 200,
+        "width": 300
+    },
+    "display": "Quill Editor",
+    "events": {
+        "AAW": {
+            "caption": "Stopped typing",
+            "doc": "Triggers after a user stops typing",
+            "name": "stopped_typing"
+        }
+    },
+    "fields": {
+        "AAF": {
+            "caption": "Placeholder",
+            "doc": "Placeholder text to display when there is no content.",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "placeholder",
+            "optional": true,
+            "rank": 0,
+            "value": "text"
+        },
+        "AAI": {
+            "caption": "Initial Content",
+            "default_val": "",
+            "doc": "This has to be in the QuillJS Delta format",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "initial_content",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAb": {
+            "caption": "⚠️If autobinding is enabled, and the initial content is set to something other than the autobound data, it will instantly be set to this content ⚠️",
+            "editor": "Label",
+            "name": "⚠️If autobinding is enabled, and the initial content is set to something other than the autobound data, it will instantly be set to this content ⚠️",
+            "rank": 1
+        }
+    },
+    "has_reset_fn": false,
+    "icon": "ion-clipboard",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "Font": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AAH": {
+            "caption": "HTML",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "html",
+            "value": "text"
+        },
+        "AAP": {
+            "caption": "Delta",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n}"
+            },
+            "name": "delta",
+            "value": "text"
+        },
+        "AAU": {
+            "caption": "Initial Delta Content",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    \n    \n    return properties.initial_content\n\n\n}"
+            },
+            "name": "initial_delta_content",
+            "value": "text"
+        },
+        "AAd": {
+            "caption": "focused",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n    \n    return false\n\t\n\n}"
+            },
+            "name": "focused",
+            "value": "boolean"
+        }
+    },
+    "support_autobinding": true
+}

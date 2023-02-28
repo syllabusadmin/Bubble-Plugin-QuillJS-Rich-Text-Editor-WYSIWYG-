@@ -1,0 +1,11 @@
+{
+    "categories": {
+        "0": "containers",
+        "1": "productivity"
+    },
+    "description": "This is rich text editor that uses the quilljs.com library.\n\nWith this, it allows users the ability to generate rich content, that can be recalled on subsequent page loads via it's Delta.\n\nIt also outputs clean, HTML that can be displayed in HTML elements.\n\nIt also has expanded features, including:\n1. Inserting embeddable iFrames with a Bubble action.\n",
+    "image": "//s3.amazonaws.com/appforest_uf/f1670349924236x848792477073143400/DALL%C2%B7E%202022-12-06%2010.05.12%20-%20create%20an%20icon%20that%20represents%20a%20syllabus.png",
+    "license": "private",
+    "name": "QuillJS Rich Text Editor (WYSIWYG)",
+    "plugin_instructions": "1. Place the element on page with desired Bubble styling.\n2. To set default content, you must use the \"Delta Format\" - https://quilljs.com/docs/delta/"
+}
