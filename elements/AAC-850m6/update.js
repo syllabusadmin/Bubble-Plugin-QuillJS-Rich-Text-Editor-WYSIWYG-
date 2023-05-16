@@ -1,8 +1,7 @@
 function(instance, properties, context) {
     
     
-    
-    
+
   //set intial delta content state
     if (!instance.data.initialContent){
         instance.publishState(`initial_delta_content`, properties.initial_content)

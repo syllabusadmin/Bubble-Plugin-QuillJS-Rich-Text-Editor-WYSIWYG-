@@ -43,6 +43,14 @@
             "editor": "Label",
             "name": "⚠️If autobinding is enabled, and the initial content is set to something other than the autobound data, it will instantly be set to this content ⚠️",
             "rank": 1
+        },
+        "AAf": {
+            "caption": "disabled",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "disabled",
+            "rank": 3,
+            "value": "boolean"
         }
     },
     "has_reset_fn": false,
