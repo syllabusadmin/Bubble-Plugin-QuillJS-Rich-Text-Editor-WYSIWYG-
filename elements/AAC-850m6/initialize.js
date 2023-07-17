@@ -219,7 +219,7 @@ function(instance, context) {
         ['bold', 'italic', 'underline', 'strike'],
         [{ color: [] }, { background: [] }],
         [{ script: 'super' }, { script: 'sub' }],
-        [{ header: '1' }, { header: '2' }, 'blockquote', 'code-block'],
+        [{ header: '1' }, { header: '2' }, 'blockquote'],
         [{ list: 'ordered' }, { list: 'bullet' }, { indent: '-1' }, { indent: '+1' }],
         ['direction', { align: [] }],
         ['link', 'video'],
