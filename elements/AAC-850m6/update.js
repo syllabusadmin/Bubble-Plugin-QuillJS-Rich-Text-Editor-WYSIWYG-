@@ -1,7 +1,16 @@
 function(instance, properties, context) {
     
     
-
+if (properties.disabled) {
+  instance.data.quill.disable();
+  var toolbar = instance.data.quill.getModule('toolbar');
+  toolbar.container.style.display = 'none';
+   } else {
+       instance.data.quill.enable();
+         var toolbar = instance.data.quill.getModule('toolbar');
+  toolbar.container.style.display = 'block';
+   }
+    
   //set intial delta content state
     if (!instance.data.initialContent){
         instance.publishState(`initial_delta_content`, properties.initial_content)
