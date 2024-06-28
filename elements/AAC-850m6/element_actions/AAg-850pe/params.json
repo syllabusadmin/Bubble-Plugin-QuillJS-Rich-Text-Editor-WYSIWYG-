@@ -1,0 +1,21 @@
+{
+    "caption": "Change Container Height",
+    "fields": {
+        "AAh": {
+            "caption": "height",
+            "default_val": 90,
+            "editor": "DynamicValue",
+            "name": "height",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAi": {
+            "caption": "logging",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "logging",
+            "rank": 1,
+            "value": "boolean"
+        }
+    }
+}

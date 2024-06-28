@@ -61,10 +61,13 @@ function(instance, context) {
           //create Iframe
           const iFrame = document.createElement("iframe");
           iFrame.setAttribute('frameborder', '0');
-          iFrame.setAttribute('url', this.sanitize(url));
+          //iFrame.setAttribute('url', this.sanitize(url));
           iFrame.style.display = "block";
           iFrame.style.margin = "auto";
-          iFrame.style.marginBottom = "10px"
+          iFrame.style.marginBottom = "10px";
+          //CSP test add
+          iFrame.setAttribute('data-src', this.sanitize(url));
+          iFrame.classList.add("lazyload-iframe");
           iFrame.setAttribute('src', this.sanitize(url));
           iFrame.setAttribute(`height`, height)
           iFrame.setAttribute(`width`, width)
